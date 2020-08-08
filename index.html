@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/javascript" />
+    <meta http-equiv="Content-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+    <title>LL</title>
+    <link rel="shortcut icon" href="./image/play.png" type="image/png">
+
+	<link type="text/css" media="screen" rel="stylesheet" href="./css/index.css" />
+
+    <script type='text/javascript' src='./js/jquery-2.2.4.min.js'></script>
+
+</head>
+
+<body>
+    <div class="gallery">
+
+        <div id="overlay">
+                <div class="dropzone">
+                    <div class="fileInput">
+                        <span>打开文件</span>
+                        <input title="点击选择文件" type="file" multiple id="choosefiles" accept="*/*"
+                               value="choose file" name="choosefiles" />
+                    </div>
+                    <br />
+                    <div class="fileInput">
+                        <span>打开目录</span>
+                        <input title="点击选择文件夹" type="file" multiple webkitdirectory id="chooseFolder" accept="*/*"
+                               value="choose directory" name="chooseFolder" />
+                    </div>
+                    <input type="checkbox" name="parsesubfolders" id="parsesubfolders" checked="checked" data-labelauty="子目录" title="搜索子目录" />
+                    <br />
+                </div>
+                <br style="clear:both"/>
+        </div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="play">
+                        <img src="./image/play.png">
+                    </div>
+
+                    <video class="video" id="video0" preload="metadata" controls="controls" loop="">你的浏览器不支持HTML5播放此视频</video>
+                </div>
+
+                <div id="showtitle">
+                     <p class="title"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="gallery-foot">
+            <div class="gallery-thumb">
+                <div class="gallery-thumb-box">
+                    <div class="gallery-thumb-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/frames.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/lodash.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/mousewheel.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery-labelauty.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/hammer.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/swipe.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
+
