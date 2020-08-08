@@ -38,6 +38,7 @@ var viewVideo = {
 		this.videos = [
 			["./HLL/92425985392/c325a0753a08b36496aa28b07ef1a522.mp4","test"],
 		];
+		this.videos = hll_videos;
 		this.showNumber = 0;
 		this.total = this.videos.length;
 		this.frames_number = 0;
